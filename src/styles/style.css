@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+:root {
+    --card-color: #dbc396;
+    --main-font: 'Gulzar', serif;
+    --background-color: #ecd053;
+    --red: #c23142;
+    --blue: #547fd5;
+}
+
+.header {
+    background-color: var(--red);
+    color: var(--background-color);
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--main-font);
+    background-color: var(--background-color);
+}
+
+.scoreboard {
+    display: flex;
+    gap: 20px;
+    font-size: 1.1rem;
+}
+
+.score {
+    color: var(--blue);
+}
+
+.besst-score {
+    color: var(--blue);
+}
+
+.cards {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px 150px;
+    padding: 40px 0px;
+}
+
+img {
+    width: auto;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--card-color);
+    padding: 10px;
+    width: 175px;
+    height: 200px;
+    cursor: pointer;
+}
+
+h3 {
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    padding: 20px;
+}
+
+.instructions {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.instructions > p {
+    width: 50%;
+    font-size: 1.2rem;
+}
